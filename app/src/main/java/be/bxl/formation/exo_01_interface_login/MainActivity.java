@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText editUsername, editPassword;
     Button btnLogin, btnReset;
+    TextView textNoRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         editPassword = findViewById(R.id.et_main_password);
         btnLogin = findViewById(R.id.btn_main_login);
         btnReset = findViewById(R.id.btn_main_reset);
+        textNoRegister = findViewById(R.id.tv_main_noregister);
 
         // Ajout d'un listenner sur les boutons
         // - Création d'un classe anonyme sur l'interface "View.OnClickListener" pour l'implementer
@@ -50,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         btnReset.setOnClickListener(view -> {
             editUsername.setText("");
             editPassword.setText("");
+        });
+
+
+        // Ajout d'un listenner sur le text "No register"
+        textNoRegister.setOnClickListener(v -> {
+            Toast.makeText(getApplicationContext(), "Boum, le text est cliquable :p", Toast.LENGTH_SHORT).show();
         });
     }
 
