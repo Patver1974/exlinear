@@ -9,4 +9,15 @@
     <string name="btn_reset">Reset</string>
     <string name="toast_login_error">Bad credential :(</string>
     <string name="toast_login_welcome">Welcome %s !</string>
+    <string name="title_register">Register</string>
+    <string name="label_address">Address</string>
+    <string name="hint_address_street">Your street</string>
+    <string name="hint_address_number">No</string>
+    <string name="hint_address_city">Your city</string>
+    <string name="hint_address_postalcode">Postal Code</string>
+    <string name="hint_address_country">Your country</string>
+    <string name="btn_register">Register</string>
+    <string name="label_mail">E-mail :</string>
+    <string name="hint_mail">Your e-mail</string>
+    <string name="hint_password_confirm">Confirm your password</string>
 </resources>
