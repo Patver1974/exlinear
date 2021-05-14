@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Exo_01_Interface_Login</string>
+    <string name="title_login">Login</string>
+    <string name="label_username">Username :</string>
+    <string name="hint_username">Your username</string>
+    <string name="label_password">Password :</string>
+    <string name="hint_password">Your password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_reset">Reset</string>
+    <string name="toast_login_error">Bad credential :(</string>
+    <string name="toast_login_welcome">Welcome %s !</string>
 </resources>
