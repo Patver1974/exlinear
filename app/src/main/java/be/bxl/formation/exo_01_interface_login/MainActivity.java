@@ -2,6 +2,7 @@ package be.bxl.formation.exo_01_interface_login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -59,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
         // Ajout d'un listenner sur le text "No register"
         textNoRegister.setOnClickListener(v -> {
             Toast.makeText(getApplicationContext(), "Boum, le text est cliquable :p", Toast.LENGTH_SHORT).show();
+
+
+            // Création d'un intent pour ouvrir l'activité "RegisterActivity"
+            Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+
+            // Envois de l'intent a Android pour démarré l'activité
+            startActivity(intent);
         });
     }
 
