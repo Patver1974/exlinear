@@ -3,10 +3,12 @@ package be.bxl.formation.myapplicationexercice1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,8 +17,11 @@ public class MainActivity extends AppCompatActivity {
     Button BtEx1;
     Button BtEx2;
     Button BtEx3;
+    Button BtEx4;
     TextView Tvnom;
     TextView Tvprenom;
+
+    EditText telephone;
 
     Switch Sw1;
     CheckBox ChkBHomme;
@@ -69,6 +74,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent3);
             }
         });
+        telephone = findViewById(R.id.ex4Tel);
+        BtEx4 = findViewById(R.id.BtEx4);
+        BtEx4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String telep =telephone.getText().toString();
+                Intent intent4 = new Intent(Intent.ACTION_DIAL, Uri.parse(telep));
+                startActivity(intent4);
+            }
+        });
+
+
 
 
     }

@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -87,7 +92,10 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:orientation="vertical">
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercice 3" />
         <Switch
             android:id="@+id/switch1"
             android:layout_width="wrap_content"
@@ -120,10 +128,54 @@
             android:layout_height="wrap_content"
             android:text="Boutton ex 3" />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercice 4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Telephone :"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+            <View
+                android:layout_width="20dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/ex4Tel"
+                android:layout_width="20dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:hint="0498000000"
+                android:inputType="text"
+                android:layout_weight="10"
+
+                />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/BtEx4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boutton ex 4" />
     </LinearLayout>
-
-
+    </LinearLayout>
+</ScrollView>
 
 
 </RelativeLayout>
