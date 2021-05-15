@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercice 1" />
+
+            <Button
+                android:id="@+id/BtEx1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boutton ex 1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercice 2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ex2Nom"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:hint="@string/nom"
+                    android:inputType="text"
+
+                    />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="0dp" />
+
+                <EditText
+                    android:id="@+id/ex2Prenom"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prenom"
+                    android:inputType="text"
+                    android:layout_weight="10"
+
+                    />
+
+            </LinearLayout>
+                <Button
+                    android:id="@+id/BtEx2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Boutton ex 2" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Afficher image " />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/ChkBHomme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="homme" />
+
+            <CheckBox
+                android:id="@+id/ChkBFemme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="femme" />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/BtEx3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boutton ex 3" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

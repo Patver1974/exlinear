@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application Exercice 1</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prenom</string>
+</resources>
