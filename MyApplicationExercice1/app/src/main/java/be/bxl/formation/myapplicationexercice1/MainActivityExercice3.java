@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivityExercice3 extends AppCompatActivity {
-  /*  boolean afficherimg;
+   boolean afficherimg;
     ImageView ImgV;
     boolean reponseb;
 
@@ -41,5 +41,5 @@ public class MainActivityExercice3 extends AppCompatActivity {
             }
         }
     }
-*/
+
 }

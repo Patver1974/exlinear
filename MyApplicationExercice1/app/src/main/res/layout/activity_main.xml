@@ -65,7 +65,7 @@
                     android:layout_height="0dp" />
 
                 <EditText
-                    android:id="@+id/ex2Prenom"
+                    android:id="@+id/ex2Prenom1"
                     android:layout_width="20dp"
                     android:layout_height="wrap_content"
                     android:hint="@string/prenom"

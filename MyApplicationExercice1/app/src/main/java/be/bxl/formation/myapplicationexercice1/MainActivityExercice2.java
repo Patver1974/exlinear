@@ -19,7 +19,7 @@ public class MainActivityExercice2 extends AppCompatActivity {
 
         // La méthode ".getTypeExtra(...)" permet de recuperer une donnée ciblé
         String msg="";
-        msg = "Bienvenue " + intent.getStringExtra("Nom")+" "+intent.getStringExtra("Prenom");
+        msg = "Bienvenue " + intent.getStringExtra("Nom")+" "+intent.getStringExtra("prenom");
         TextView tv1;
         tv1 = findViewById(R.id.textView2);
         tv1.setText(msg);
