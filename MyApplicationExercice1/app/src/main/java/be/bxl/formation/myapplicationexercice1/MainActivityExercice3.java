@@ -24,16 +24,16 @@ public class MainActivityExercice3 extends AppCompatActivity {
         Bundle data = intent.getExtras();
 
         // La méthode ".getTypeExtra(...)" permet de recuperer une donnée ciblé
-        afficherimg = Boolean.parseBoolean(intent.getStringExtra("Image"));
+        afficherimg = data.getBoolean("Image");
 
-        reponseb = Boolean.parseBoolean(intent.getStringExtra("Femme"));
+        reponseb = data.getBoolean("Femme");
         if (reponseb == true) {
             Toast.makeText(getApplicationContext(), "JE Suis une femme", Toast.LENGTH_LONG).show();
             if (afficherimg == true) {
                 ImgV.setImageResource(R.drawable.fotofemme);
             }
         }
-        reponseb = Boolean.parseBoolean(intent.getStringExtra("Homme"));
+        reponseb = data.getBoolean("Homme");
         if (reponseb == true) {
             Toast.makeText(getApplicationContext(), "JE Suis un homme", Toast.LENGTH_LONG).show();
             if (afficherimg == true) {

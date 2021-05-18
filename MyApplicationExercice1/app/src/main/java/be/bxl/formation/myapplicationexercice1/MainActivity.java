@@ -56,7 +56,9 @@ public class MainActivity extends AppCompatActivity {
             // Envois de l'intent a Android pour démarré l'activité
             startActivity(intent2);
         });
-
+         Sw1= findViewById(R.id.switch1);
+         ChkBHomme= findViewById(R.id.ChkBHomme);
+         ChkBFemme = findViewById(R.id.ChkBFemme);
 
 
         BtEx3 = findViewById(R.id.BtEx3);
